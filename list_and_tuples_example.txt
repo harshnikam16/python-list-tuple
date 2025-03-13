@@ -1,0 +1,21 @@
+ attendance_records = [(101,"2025-03-01","Present"),(102,"2025-03-01","Abscent"),(103,"2025-03-01","Present"),(104,"2025-03-01","Present"),(105,"2025-03-01","Abscent")]
+
+
+ def search_emp(emp_list, status):
+     for emp in emp_list:
+         if emp[2] == status:
+             return emp
+         return "Not found"
+ print(search_emp(attendance_records,"Present"))
+
+employees = [(101,"Alice","HR"),(102,"Bob","IT"),(103,"Charlie","Finance"),(104,"David","IT"),(105,"Eve","Finance")]
+
+
+def search_emp(emp_list, status):
+    for emp in emp_list:
+        if emp[0] == status:
+            return emp
+        return "Not found"
+print(search_emp(employees,101))
+
+
